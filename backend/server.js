@@ -1,3 +1,4 @@
+
 require("dotenv").config();
 
 const app = require("./src/app");
@@ -10,12 +11,15 @@ async function startServer() {
     await pool.query("SELECT 1");
 
     app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`);
+      console.log(`Server running on port ${PORT}`);
       console.log("PostgreSQL connected successfully.");
     });
   } catch (error) {
-    console.error("Could not connect to PostgreSQL.");
-    console.error(error.message);
+    console.error("PostgreSQL connection failed.");
+    console.error("Error name:", error.name);
+    console.error("Error message:", JSON.stringify(error.message));
+    console.error("Error code:", error.code);
+    console.error("Full error:", error);
     process.exit(1);
   }
 }
