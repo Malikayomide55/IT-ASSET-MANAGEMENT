@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # IT Asset and Maintenance Management System
 
 ## Description
@@ -63,4 +64,8 @@ PUT    /api/maintenance/:id
 
 ## Author
 
-Add your name and SIWES details here.
+OLAYIWOLA ABDULMALIK AYOMIDE.
+24/CSC/011.
+=======
+# IT-ASSET-MANAGEMENT
+>>>>>>> origin/main
