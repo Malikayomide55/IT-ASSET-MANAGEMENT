@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 # IT Asset and Maintenance Management System
 
 ## Description
 
-A full-stack application for registering IT equipment,
-tracking asset assignments, and recording maintenance activities.
+A full-stack application for registering IT equipment, tracking asset assignments, and recording maintenance activities.
 
 ## Technologies
 
@@ -12,17 +10,17 @@ tracking asset assignments, and recording maintenance activities.
 - Vite
 - Node.js and Express
 - PostgreSQL
-- pg database driver
+- `pg` database driver
 - Postman
 
 ## Features
 
 - Asset registration and inventory
 - Dashboard statistics
-- Search assets
+- Asset search
 - Edit and delete assets
 - Maintenance and repair records
-- Track asset status
+- Asset status tracking
 - Warranty expiry tracking in dashboard statistics
 
 ## Setup
@@ -32,40 +30,48 @@ tracking asset assignments, and recording maintenance activities.
 3. Run `database/schema.sql` against the database.
 4. Run `database/seed.sql` if sample data is needed.
 5. Configure `backend/.env`.
-6. Install dependencies in both `backend` and `frontend`.
+6. Install dependencies in both the `backend` and `frontend` directories.
 
-## Start the backend
+## Start the Backend
 
-Open a terminal:
+Open a terminal and run:
 
-    cd backend
-    npm run dev
+```powershell
+cd backend
+npm.cmd install
+npm.cmd run dev
+```
 
-## Start the frontend
+## Start the Frontend
 
-Open another terminal:
+Open another terminal and run:
 
-    cd frontend
-    npm run dev
+```powershell
+cd frontend
+npm.cmd install
+npm.cmd run dev
+```
 
-## API endpoints
+## API Endpoints
 
-GET    /api/health
-GET    /api/assets
-GET    /api/assets/stats
-GET    /api/assets/:id
-POST   /api/assets
-PUT    /api/assets/:id
-DELETE /api/assets/:id
+### Assets
 
-GET    /api/maintenance
-POST   /api/maintenance
-PUT    /api/maintenance/:id
+- `GET /api/health`
+- `GET /api/assets`
+- `GET /api/assets/stats`
+- `GET /api/assets/:id`
+- `POST /api/assets`
+- `PUT /api/assets/:id`
+- `DELETE /api/assets/:id`
+
+### Maintenance
+
+- `GET /api/maintenance`
+- `POST /api/maintenance`
+- `PUT /api/maintenance/:id`
 
 ## Author
 
-OLAYIWOLA ABDULMALIK AYOMIDE.
-24/CSC/011.
-=======
-# IT-ASSET-MANAGEMENT
->>>>>>> origin/main
+OLAYIWOLA ABDULMALIK AYOMIDE
+
+Matric Number: 24/CSC/011
